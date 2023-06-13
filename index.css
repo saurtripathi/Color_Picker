@@ -13,9 +13,7 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-template-areas: "header"; */
-    /* border: 1px solid red; */
-    /* height: 550px; */
+    grid-template-areas: "main";
 }
 
 .main {
@@ -26,7 +24,7 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: #FFFFFF;
-    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+    grid-area: main;
 }
 
 .picker {
@@ -45,7 +43,7 @@ body {
     border-radius: 6px;
     box-sizing: border-box;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.25rem;
     line-height: 150%;
     color: #111827;
 }
@@ -55,11 +53,9 @@ body {
     height: 42px;
     background: #FFFFFF;
     border: 1px solid #D1D5DB;
-    /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); */
     border-radius: 4px;
     text-align: center;
     font-size: 0.75rem;
-    /* padding: 1em 2em; */
 }
 
 .color-bar-container {
@@ -77,8 +73,8 @@ body {
 
 .hex-footer {
     display: flex;
-justify-content: space-around;
-align-items: center;
+    justify-content: space-around;
+    align-items: center;
     width: 550px;
     height: 46px;
     border: 1px dotted red;
@@ -108,3 +104,4 @@ align-items: center;
 .hex-code {
     font-size: 0.75rem;
 }
+

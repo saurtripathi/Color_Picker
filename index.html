@@ -16,33 +16,20 @@
 
     <div class="container">
         <div class="main">
-            <input type="color" class="picker">
-            <select class="select">
-                <option>Monochrome</option>
-                <option>Monochrome-dark</option>
-                <option>Monochrome-light</option>
-                <option>Analogic</option>
-                <option>Complement</option>
-                <option>Analogic-Complement</option>
-                <option>Triad</option>
+            <input type="color" id="picker" class="picker" value="#F02400">
+            <select class="select" id="select">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-Complement</option>
+                <option value="triad">Triad</option>
             </select>
-            <button class="get-btn">Get color scheme</button>
+            <button id="get-btn" class="get-btn">Get color scheme</button>
         </div>
-        <div>
-            <div class="color-bar-container">
-                <div class="color-bar color1">1</div>
-                <div class="color-bar color2">2</div>
-                <div class="color-bar color3">3</div>
-                <div class="color-bar color4">4</div>
-                <div class="color-bar color5">5</div>
-            </div>
-            <div class="hex-footer">
-                <span class="hex-code">#A626D3</span>
-                <span class="hex-code">#AAD1B6</span>
-                <span class="hex-code">#FBF3AB</span>
-                <span class="hex-code">#2B283A</span>
-                <span class="hex-code">#F55A5A</span>
-            </div>
+        <div id="color-box">
+
         </div>
     </div>
 
