@@ -15,33 +15,22 @@
 <body>
 
     <div class="container">
-        <div class="top"></div>
-        <div class="color-container">
-            <div class="bar-container">
-                <div class="color-bar-1 color-code-1">
-                </div>
-                <span>#E5E5E5</span>
-            </div>
-            <div class="bar-container">
-                <div class="color-bar-2 color-code-2">
-                </div>
-                <span>#E5E5E5</span>
-            </div>
-            <div class="bar-container">
-                <div class="color-bar-3 color-code-3">
-                </div>
-                <span>#E5E5E5</span>
-            </div>
-            <div class="bar-container">
-                <div class="color-bar-4 color-code-4">
-                </div>
-                <span>#E5E5E5</span>
-            </div>
-            <div class="bar-container">
-                <div class="color-bar-5 color-code-5">
-                </div>
-                <span>#E5E5E5</span>
-            </div>
+        <div class="main">
+            <input type="color" id="picker" class="picker" value="#F02400">
+            <select class="select" id="select">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-Complement</option>
+                <option value="triad">Triad</option>
+            </select>
+            <button id="get-btn" class="get-btn">Get color scheme</button>
+        </div>
+        <div id="color-box">
+        </div>
+        <div class="hex-footer" id="hex-footer">
         </div>
     </div>
 

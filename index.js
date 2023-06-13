@@ -44,23 +44,14 @@ setTimeout(function(){
     console.log(hexColorValueArray)
     let html = ''
     let html1 = ''
-    // html += `            
-    //                     <div class="color-bar-container" id="color-bar-container">
-    //                         <div class="color-bar tooltip" id='bar-1' ><span class="tooltiptext">Click to copy</span></div>
-    //                         <div class="color-bar tooltip" id='bar-2' ><span class="tooltiptext">Click to copy</span></div>
-    //                         <div class="color-bar tooltip" id='bar-3'  ><span class="tooltiptext">Click to copy</span></div>
-    //                         <div class="color-bar tooltip" id='bar-4'  ><span class="tooltiptext">Click to copy</span></div>
-    //                         <div class="color-bar tooltip" id='bar-5'  ><span class="tooltiptext">Click to copy</span></div>
-    //                     </div>`
-
     html += `            
-        
-        <div class="color-bar tooltip" id='bar-1' ><span class="tooltiptext">Click to copy</span></div>
-        <div class="color-bar tooltip" id='bar-2' ><span class="tooltiptext">Click to copy</span></div>
-        <div class="color-bar tooltip" id='bar-3'  ><span class="tooltiptext">Click to copy</span></div>
-        <div class="color-bar tooltip" id='bar-4'  ><span class="tooltiptext">Click to copy</span></div>
-        <div class="color-bar tooltip" id='bar-5'  ><span class="tooltiptext">Click to copy</span></div>
-        `
+                        <div class="color-bar-container" id="color-bar-container">
+                            <div class="color-bar tooltip" id='bar-1' ><span class="tooltiptext">Click to copy</span></div>
+                            <div class="color-bar tooltip" id='bar-2' ><span class="tooltiptext">Click to copy</span></div>
+                            <div class="color-bar tooltip" id='bar-3'  ><span class="tooltiptext">Click to copy</span></div>
+                            <div class="color-bar tooltip" id='bar-4'  ><span class="tooltiptext">Click to copy</span></div>
+                            <div class="color-bar tooltip" id='bar-5'  ><span class="tooltiptext">Click to copy</span></div>
+                        </div>`
                         html1 +=  `<div class="hex-footer" id="hex-footer">
                             <span class="hex-code">${hexColorValueArray[0]}</span>
                             <span class="hex-code">${hexColorValueArray[1]}</span>
