@@ -7,26 +7,24 @@ body {
 }
 
 .container {
-    max-width: 550px;
-    width: 100vw;
+    max-width: 400px;
+    /* width: 100vw; */
     height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "main"; */
 }
 
 .main {
-    width: 550px;
+    /* width: 550px; */
+    width: 100%;
     height: 90px;
     border: 1px solid #D1D5DB;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #FFFFFF;
-    grid-area: main;
+    /* gap: 0.5em; */
 }
 
 .picker {
@@ -62,9 +60,9 @@ body {
 
 .color-bar-container {
     display: flex;
-    width: 550px;
+    width: 400px;
     height: 414px;
-    /* border: 1px solid black; */
+    /* border: 5px solid red; */
 }
 
 .color-bar {
@@ -77,9 +75,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 550px;
+    width: 400px;
     height: 46px;
-    /* border: 1px dotted red; */
+    /* border: 1px dotted purple; */
 }
 
 .color1 {
