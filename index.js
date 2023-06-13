@@ -45,11 +45,11 @@ setTimeout(function(){
     let html = ''
     html += `            
                         <div class="color-bar-container" id="color-bar-container">
-                            <div class="color-bar" id='bar-1' ></div>
-                            <div class="color-bar" id='bar-2' ></div>
-                            <div class="color-bar" id='bar-3' ></div>
-                            <div class="color-bar" id='bar-4' ></div>
-                            <div class="color-bar" id='bar-5' ></div>
+                            <div class="color-bar tooltip" id='bar-1' ><span class="tooltiptext">Click to copy</span></div>
+                            <div class="color-bar tooltip" id='bar-2' ><span class="tooltiptext">Click to copy</span></div>
+                            <div class="color-bar tooltip" id='bar-3'  ><span class="tooltiptext">Click to copy</span></div>
+                            <div class="color-bar tooltip" id='bar-4'  ><span class="tooltiptext">Click to copy</span></div>
+                            <div class="color-bar tooltip" id='bar-5'  ><span class="tooltiptext">Click to copy</span></div>
                         </div>
                         <div class="hex-footer" id="hex-footer">
                             <span class="hex-code">${hexColorValueArray[0]}</span>
@@ -71,6 +71,19 @@ setTimeout(function(){
     div4.style.backgroundColor = hexColorValueArray[3]
     div5.style.backgroundColor = hexColorValueArray[4]
     hexColorValueArray = ''
+
+    document.body.onclick = e => {
+    const colorBar = document.getElementById(e.target.id);
+    console.log(colorBar.style.backgroundColor)
+    navigator.clipboard.writeText(colorBar.style.backgroundColor);
+    // alert(colorBar.style.backgroundColor)
+
+    }
+
+ 
+
+
+
 },2000)
    
 
