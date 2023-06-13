@@ -13,11 +13,12 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    /* border: 1px solid red; */
 }
 
 .main {
     /* width: 550px; */
-    width: 100%;
+    width: 400px;
     height: 90px;
     border: 1px solid #D1D5DB;
     display: flex;
@@ -29,13 +30,13 @@ body {
 
 .picker {
     width: 61px;
-    height: 42px;
+    height: 60px;
 
 }
 
 .select {
-    width: 312px;
-    height: 42px;
+    width: 212px;
+    height: 60px;
     padding: 1em 2em;
     background: #FFFFFF;
     color: #D1D5DB;
@@ -43,14 +44,14 @@ body {
     border-radius: 6px;
     box-sizing: border-box;
     font-weight: 400;
-    font-size: 0.25rem;
-    line-height: 150%;
+    font-size: 0.75rem;
+    /* line-height: 150%; */
     color: #111827;
 }
 
 .get-btn {
-    width: 123px;
-    height: 42px;
+    width: 100px;
+    height: 60px;
     background: #FFFFFF;
     border: 1px solid #D1D5DB;
     border-radius: 4px;
