@@ -11,7 +11,7 @@ body {
     max-width: 34.375em;
     /* max-height: 550px; */
     max-height: 34.375em;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     width: 100%;
     margin: 0 auto;
     display: grid;
@@ -87,11 +87,10 @@ input {
  
 main {
     grid-area: main;
+    display: flex;
 }
 
-.color-box {
 
-}
 
 .color-bar-container {
     display: flex;
