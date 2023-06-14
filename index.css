@@ -44,7 +44,7 @@ button {
     border: 1px solid #D1D5DB;
     border-radius: 4px;
     margin: 1.5625em 0.25em 1.5625em 0;
-    text-align: center;
+    /* text-align: center; */
     padding: 0.25em 0.5em;
 }
 
