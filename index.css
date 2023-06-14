@@ -12,7 +12,7 @@ body {
     /* max-height: 550px; */
     max-height: 34.375em;
     border: 2px solid red;
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
