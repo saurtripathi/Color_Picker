@@ -88,6 +88,8 @@ input {
 main {
     grid-area: main;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 
