@@ -109,20 +109,27 @@ body {
     background-color: #fb8500;
 }
 
-.color-bar-4 {
-    /* display: flex; */
-    width: 110px;
-    height: 414px;
-    background-color: #219ebc;
-}
 
-.color-bar-5 {
-    /* display: flex; */
-    width: 110px;
-    height: 414px;
-    background-color: #8ecae6;
-}
+.tooltip .tooltiptext {
+    font-size: 0.75rem;
+    visibility: hidden;
+    width: 100px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    border:1px solid black;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  span {
+    margin: 0;
+  }
 
-/* span {
-    margin: auto;
-} */
