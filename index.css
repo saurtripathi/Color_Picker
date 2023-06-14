@@ -38,6 +38,7 @@ button {
     color: #374151;
     border: 1px solid #D1D5DB;
     border-radius: 4px;
+    margin: 0.5em 1em;
 }
 
 select {
@@ -67,6 +68,7 @@ input {
     box-sizing: border-box;
     background-color: #E5E5E5;
     border: 0.5px solid #D1D5DB;
+    margin: 0.5em 1em;
 }
 
 main {
