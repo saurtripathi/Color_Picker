@@ -7,9 +7,11 @@ body {
 }
 
 .container {
-    max-width: 550px;
-    max-height: 550px;
-    border: 2px solid red;
+    /* max-width: 550px; */
+    max-width: 34.375em;
+    /* max-height: 550px; */
+    max-height: 34.375em;
+    /* border: 2px solid red; */
     width: 100%;
     margin: 0 auto;
     display: grid;
@@ -18,63 +20,77 @@ body {
 }
 
 
-header {
+.header {
     display: flex;
-    max-height: 90px;
+    /* max-height: 90px; */
+    max-height: 5.625em;
     height: 100%;
     align-items: center;
     justify-content: space-around;
     grid-area: header;
+    padding: 0.25em 0 0.25em 0;
 }
 
 button {
     display: flex;
-    max-width: 123px;
+    /* max-width: 123px; */
+    max-width: 7.6875em;
     width: 100%;
-    height: 42px;
+    /* height: 42px; */
+    height: 2.625em;
     font-weight: 400;
     font-size: 0.75rem;
     line-height: 1rem;
     color: #374151;
     border: 1px solid #D1D5DB;
     border-radius: 4px;
-    margin: 0.5em 1em;
+    margin: 1.5625em 0.25em 1.5625em 0;
     text-align: center;
 }
 
 select {
     display: flex;
-    max-width: 200px;
+    /* max-width: 312px; */
+    max-width: 19.5em;
     width: 100%;
-    height: 42px;
+    /* height: 42px; */
+    height: 2.625em;
     box-sizing: border-box;
     background-color: #FFFFFF;
     border: 1px solid #D1D5DB;
     border-radius: 6px;
     font-weight: 400;
     font-size: 0.75rem;
-    line-height: 1.5rem;
+    /* line-height: 1.5rem; */
     color: #111827;
-    padding: 0.5em 1em;
+    margin: 1.5625em 0.5em;
+    /* padding: 0.5em 1em; */
+    position: relative;
 }
 
 
 input {
     display: flex;
-    max-width: 61px;
+    /* max-width: 61px; */
+    max-width: 3.8125em;
     width: 100%;
-    height: 42px;
+    /* height: 42px; */
+    height: 2em;
     display: flex;
     background-color: #F55A5A;
     border: 0.5px solid #313131;
     box-sizing: border-box;
     background-color: #E5E5E5;
     border: 0.5px solid #D1D5DB;
-    margin: 0.5em 1em;
+    margin-left: 1.5625em 0 1.5625em 0.25em;
 }
-
+ 
 main {
     grid-area: main;
+}
+
+.color-box {
+
 }
 
 .color-bar-container {
