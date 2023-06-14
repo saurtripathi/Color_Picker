@@ -6,30 +6,29 @@ body {
     background-color: #FFFDFE;
 }
 
-.container {
-    /* max-width: 550px; */
-    max-width: 34.375em;
-    /* max-height: 550px; */
-    max-height: 34.375em;
-    border: 2px solid red;
+header {
+    max-width: 550px;
+    /* max-width: 34.375em; */
+    max-height: 90px;
+    /* max-height: 34.375em; */
+    border: 2px solid green;
     width: 100vw;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "main" "footer";
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 
-.header {
+/* .header {
     display: flex;
-    /* max-height: 90px; */
     max-height: 5.625em;
     height: 100%;
     align-items: center;
     justify-content: space-around;
     grid-area: header;
     padding: 0.25em 0 0.25em 0;
-}
+} */
 
 button {
     display: flex;
