@@ -39,6 +39,7 @@ button {
     border: 1px solid #D1D5DB;
     border-radius: 4px;
     margin: 0.5em 1em;
+    text-align: center;
 }
 
 select {
