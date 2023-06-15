@@ -92,7 +92,7 @@ main {
     height: 414px;
     /* max-height: 34.375em; */
     border: 2px solid green;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
