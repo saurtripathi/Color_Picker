@@ -157,3 +157,23 @@ footer {
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+  .color1 {
+    background-color: #A626D3;
+}
+
+.color2 {
+    background-color: #AAD1B6;
+
+}
+
+.color3 {
+    background-color: #FBF3AB;
+}
+
+.color4 {
+    background-color: #2B283A
+}
+
+.color5 {
+    background-color: #F55A5A;
+}
