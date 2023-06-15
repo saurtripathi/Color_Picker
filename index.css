@@ -8,29 +8,19 @@ body {
 
 .container {
     max-width: 550px;
-    /* width: 100vw; */
     margin: 3em auto;
     width: 100vw;
     height: 550px;
-    /* border: 1px solid grey; */
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
 }
-
-
-
-
-
 .main {
     width: 550px;
     height: 90px;
-    /* border: 1px solid #D1D5DB; */
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: #FFFFFF; */
-    /* gap: 0.5em; */
 }
 
 .picker {
@@ -69,7 +59,6 @@ body {
     display: flex;
     width: 550px;
     height: 414px;
-    /* border: 5px solid red; */
 }
 
 .color-bar {
@@ -86,7 +75,6 @@ body {
     width: 550px;
     height: 46px;
     font-size: 0.75rem;
-    /* border: 1px dotted purple; */
 }
 
 
@@ -101,8 +89,6 @@ body {
     border-radius: 6px;
     padding: 5px 0;
     border: 1px solid black;
-
-    /* Position the tooltip */
     position: absolute;
     z-index: 1;
 }
@@ -118,100 +104,37 @@ body {
     .container {
         margin: 4em auto;
         width: 100%;
-        height: 550px;
-        /* border: 1px solid grey; */
-        display: flex;
-        flex-direction: column;
-        background-color: whitesmoke;
     }
-
-
-
-
-
     .main {
         width: 100%;
-        height: 90px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
     }
 
     .picker {
         width: 42px;
-        height: 42px;
-
     }
 
     .select {
         width: 212px;
-        height: 42px;
         padding: 0 0.5em;
-        background: #FFFFFF;
-        color: #D1D5DB;
-        border: 1px solid #D1D5DB;
-        border-radius: 6px;
-        box-sizing: border-box;
-        font-weight: 400;
         font-size: 0.5rem;
-        line-height: 150%;
-        color: #111827;
     }
 
     .get-btn {
         width: 100px;
-        height: 42px;
-        background: #FFFFFF;
-        border: 1px solid #D1D5DB;
-        border-radius: 4px;
-        text-align: center;
         font-size: 0.5rem;
-
     }
 
     .color-bar-container {
-        display: flex;
         width: 100%;
-        height: 414px;
-        /* border: 5px solid red; */
-    }
-
-    .color-bar {
-        width: 110px;
-        height: 414px;
-        display: flex;
-        background-color: #023047;
     }
 
     .hex-footer {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
         width: 100%;
-        height: 46px;
         font-size: 0.5rem;
-        /* border: 1px dotted purple; */
     }
-
-
-
     .tooltip .tooltiptext {
         font-size: 0.5rem;
-        visibility: hidden;
         width: 50px;
-        background-color: #fff;
-        color: black;
-        text-align: center;
-        border-radius: 3px;
         padding: 5px 2px;
-        border: 1px solid black;
-
-        /* Position the tooltip */
-        position: absolute;
-        z-index: 1;
-    }
-
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
     }
 }
