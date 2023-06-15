@@ -54,22 +54,22 @@ setTimeout(function(){
     //                     </div>`
 
     html += `            
-   
+        
         <div class="color-bar tooltip" id='bar-1' ><span class="tooltiptext">Click to copy</span></div>
         <div class="color-bar tooltip" id='bar-2' ><span class="tooltiptext">Click to copy</span></div>
         <div class="color-bar tooltip" id='bar-3'  ><span class="tooltiptext">Click to copy</span></div>
         <div class="color-bar tooltip" id='bar-4'  ><span class="tooltiptext">Click to copy</span></div>
         <div class="color-bar tooltip" id='bar-5'  ><span class="tooltiptext">Click to copy</span></div>
-    `
-                        // html1 +=  `<div class="hex-footer" id="hex-footer">
-                        //     <span class="hex-code">${hexColorValueArray[0]}</span>
-                        //     <span class="hex-code">${hexColorValueArray[1]}</span>
-                        //     <span class="hex-code">${hexColorValueArray[2]}</span>
-                        //     <span class="hex-code">${hexColorValueArray[3]}</span>
-                        //     <span class="hex-code">${hexColorValueArray[4]}</span>
-                        // </div>`
+        `
+                        html1 +=  `<div class="hex-footer" id="hex-footer">
+                            <span class="hex-code">${hexColorValueArray[0]}</span>
+                            <span class="hex-code">${hexColorValueArray[1]}</span>
+                            <span class="hex-code">${hexColorValueArray[2]}</span>
+                            <span class="hex-code">${hexColorValueArray[3]}</span>
+                            <span class="hex-code">${hexColorValueArray[4]}</span>
+                        </div>`
     box.innerHTML = html
-    // box.innerHTML += html1
+    box.innerHTML += html1
     const div1 = document.getElementById('bar-1')
     const div2 = document.getElementById('bar-2')
     const div3 = document.getElementById('bar-3')
