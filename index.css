@@ -12,6 +12,8 @@ body {
     height: 550px;
     margin: 0 auto;
     border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
     /* background-color: grey; */
 }
 
@@ -20,8 +22,7 @@ body {
 
 
 .main {
-    /* width: 550px; */
-    width: 100%;
+    width: 550px;
     height: 90px;
     border: 1px solid #D1D5DB;
     display: flex;
@@ -64,7 +65,7 @@ body {
 
 .color-bar-container {
     display: flex;
-    width: 400px;
+    width: 550px;
     height: 414px;
     /* border: 5px solid red; */
 }
@@ -80,17 +81,11 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 400px;
+    width: 550px;
     height: 46px;
     /* border: 1px dotted purple; */
 }
 
-.color-bar-3 {
-    /* display: flex; */
-    width: 110px;
-    height: 414px;
-    background-color: #fb8500;
-}
 
 
 .tooltip .tooltiptext {
