@@ -91,7 +91,7 @@ main {
     /* max-width: 34.375em; */
     height: 414px;
     /* max-height: 34.375em; */
-    border: 2px solid red;
+    border: 2px solid green;
     width: 100vw;
     margin: 0 auto;
     display: flex;
@@ -115,6 +115,7 @@ main {
     height: 414px;
     padding: 0;
     margin: 0;
+    vertical-align: baseline;
     /* border: 1px dotted red; */
 }
 
@@ -155,7 +156,4 @@ footer {
   
   .tooltip:hover .tooltiptext {
     visibility: visible;
-  }
-  span {
-    margin: 0;
   }
