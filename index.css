@@ -11,13 +11,15 @@ body {
     max-height: 550px;
     width: 100%;
     height: 100%;
-    margin: 3em auto;
+    margin: 0 auto;
     border: 1px solid grey;
     /* background-color: grey; */
 }
 
 .top {
     height: 90px;
+    max-width: 550px;
+    width: 100%;
     background-color: red;
 
 }
@@ -43,40 +45,40 @@ body {
 } */
 
 .color-bar-1 {
-    display: flex;
+    /* display: flex; */
     width: 110px;
     height: 414px;
     background-color: #023047;
 }
 
 .color-bar-2 {
-    display: flex;
+    /* display: flex; */
     width: 110px;
     height: 414px;
     background-color: #ffb703;
 }
 
 .color-bar-3 {
-    display: flex;
+    /* display: flex; */
     width: 110px;
     height: 414px;
     background-color: #fb8500;
 }
 
 .color-bar-4 {
-    display: flex;
+    /* display: flex; */
     width: 110px;
     height: 414px;
     background-color: #219ebc;
 }
 
 .color-bar-5 {
-    display: flex;
+    /* display: flex; */
     width: 110px;
     height: 414px;
     background-color: #8ecae6;
 }
 
-span {
+/* span {
     margin: auto;
-}
+} */
