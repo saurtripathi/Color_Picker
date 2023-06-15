@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    max-width: 550px;
+    max-width: 500px;
     /* max-width: 34.375em; */
     max-height: 90px;
     /* max-height: 34.375em; */
@@ -87,7 +87,7 @@ input {
 }
  
 main {
-    max-width: 550px;
+    max-width: 500px;
     /* max-width: 34.375em; */
     height: 414px;
     /* max-height: 34.375em; */
