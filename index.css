@@ -107,6 +107,7 @@ body {
     }
     .main {
         width: 100%;
+        margin-bottom: 1em;
     }
 
     .picker {
@@ -125,11 +126,14 @@ body {
     }
 
     .color-bar-container {
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
+        background-color: yellow;
     }
 
     .hex-footer {
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
         font-size: 0.5rem;
     }
     .tooltip .tooltiptext {
