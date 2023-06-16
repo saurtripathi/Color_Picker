@@ -1,130 +1,97 @@
+const baseURI = 'https://www.thecolorapi.com/scheme'
 const selectMenu = document.getElementById('select')
 const colorPicker = document.getElementById('picker')
 const getBtn = document.getElementById('get-btn')
 const box = document.getElementById('color-box')
 
 
-let seedColor = ''
-let selectValue = ''
+let seedColor = colorPicker.getAttribute('value')
+let selectValue = selectMenu.options[selectMenu.selectedIndex].value
+let hexColorValueArray = []
+
+render()
 
 selectMenu.addEventListener('change', function () {
     selectValue = selectMenu.options[selectMenu.selectedIndex].value
-    console.log(selectValue)
 })
 
 colorPicker.addEventListener('input', (event) => {
     colorPicker.setAttribute('value', event.target.value)
     seedColor = colorPicker.getAttribute('value')
-    console.log('the seed color is ' + seedColor.substring(1))
 })
 
-getBtn.addEventListener('click', () => {
-    let hexColorValueArray = []
-    console.log(`https://www.thecolorapi.com/scheme?hex=${seedColor.substring(1)}&mode=${selectValue}`)
-    fetch(`https://www.thecolorapi.com/scheme?hex=${seedColor.substring(1)}&mode=${selectValue}`)
+document.body.onclick = e => {
+
+    let id = e.target.id
+
+    if (id === 'get-btn') {
+        render()
+    }
+    const colorBar = document.getElementById(e.target.id);
+    navigator.clipboard.writeText(colorBar.style.backgroundColor);
+
+}
+
+
+function render() {
+    hexColorValueArray = []
+    console.log(`${baseURI}?hex=${seedColor.substring(1)}&mode=${selectValue}`)
+    fetch(`${baseURI}?hex=${seedColor.substring(1)}&mode=${selectValue}`)
         .then(response => response.json())
         .then(data => {
-            // for(let i = 0; i < data.colors.length; i++)
-            // // hexColorValueArray[i] = data.colors[i].hex.value
-            // console.log(data.colors[i].hex.value)
-            //     // hexColorValueArray.push(`${color.hex.value}`)
-            // // data.colors.forEach(color => hexColorValueArray.push(color.hex.value))
-
-
-
-                data.colors.forEach(color => {
-                    
-                    hexColorValueArray.push(color.hex.value)
-                })
-
+            data.colors.forEach(color => {
+                hexColorValueArray.push(color.hex.value)
+            })
+        })
+    setTimeout(function () {
+        getColorBarContainerHtml()
+        for (let i = 0; i < hexColorValueArray.length; i++) {
+            document.getElementById(`bar-${i + 1}`).style.backgroundColor = hexColorValueArray[i]
         }
-        )
-setTimeout(function(){
+        hexColorValueArray = ''
+    }, 1000)
+}
 
-    console.log(hexColorValueArray)
-    let html = ''
-    let html1 = ''
-    html += `            
-                        <div class="color-bar-container" id="color-bar-container">
-                            <div class="color-bar tooltip" id='bar-1' ><span class="tooltiptext">Click to copy</span></div>
-                            <div class="color-bar tooltip" id='bar-2' ><span class="tooltiptext">Click to copy</span></div>
-                            <div class="color-bar tooltip" id='bar-3'  ><span class="tooltiptext">Click to copy</span></div>
-                            <div class="color-bar tooltip" id='bar-4'  ><span class="tooltiptext">Click to copy</span></div>
-                            <div class="color-bar tooltip" id='bar-5'  ><span class="tooltiptext">Click to copy</span></div>
-                        </div>`
-                        html1 +=  `<div class="hex-footer" id="hex-footer">
-                            <span class="hex-code">${hexColorValueArray[0]}</span>
-                            <span class="hex-code">${hexColorValueArray[1]}</span>
-                            <span class="hex-code">${hexColorValueArray[2]}</span>
-                            <span class="hex-code">${hexColorValueArray[3]}</span>
-                            <span class="hex-code">${hexColorValueArray[4]}</span>
-                        </div>`
-    box.innerHTML = html
-    box.innerHTML += html1
-    const div1 = document.getElementById('bar-1')
-    const div2 = document.getElementById('bar-2')
-    const div3 = document.getElementById('bar-3')
-    const div4 = document.getElementById('bar-4')
-    const div5 = document.getElementById('bar-5')
-
-    div1.style.backgroundColor = hexColorValueArray[0]
-    div2.style.backgroundColor = hexColorValueArray[1]
-    div3.style.backgroundColor = hexColorValueArray[2]
-    div4.style.backgroundColor = hexColorValueArray[3]
-    div5.style.backgroundColor = hexColorValueArray[4]
-    hexColorValueArray = ''
-
-    document.body.onclick = e => {
-    const colorBar = document.getElementById(e.target.id);
-    console.log(colorBar.style.backgroundColor)
-    navigator.clipboard.writeText(colorBar.style.backgroundColor);
-    // alert(colorBar.style.backgroundColor)
-
+function getHexCodeHtml() {
+    let hexCodeHtml = ''
+    for (let i = 0; i < 5; i++) {
+        hexCodeHtml += `<span class="hex-code">${hexColorValueArray[i]}</span>`
     }
-
- 
-
-
-
-},2000)
-   
-
-
-
-
-})
+    return hexCodeHtml
+}
+function getColorBarHtml() {
+    let colorBarHtml = ''
+    for (let i = 0; i < 5; i++) {
+        colorBarHtml += `<div class="color-bar tooltip" id='bar-${i + 1}' ><span class="tooltiptext">Click to copy</span></div>`
+    }
+    return colorBarHtml
+}
 
 
 
+function getColorBarContainerHtml() {
+    let html = ''
+    let colorBarHtml = getColorBarHtml()
+    let hexCodeHtml = getHexCodeHtml()
+    html += `            
+        <div class="color-bar-container" id="color-bar-container">
+            ${colorBarHtml}
+        </div>
+        <div class="hex-footer" id="hex-footer">
+            ${hexCodeHtml}
+        </div>`
+    box.innerHTML = html
+}
 
-
-
-// fetch(`https://www.thecolorapi.com/scheme?hex=7f2d1f`)
-// .then(response => response.json())
-// .then(data => 
-//     {
-//         data.colors.forEach(color => hexColorValueArray.push(color.hex.value))
-//         console.log(hexColorValueArray)
-//         ['#180906', '#411811', '#6A261A', '#943424', '#BE422C']
-
-//     }
-//     )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function fade(element) {
+    var op = 1;  // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.1) {
+            clearInterval(timer);
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;
+    }, 50);
+}

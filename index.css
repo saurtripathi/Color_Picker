@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     background-color: whitesmoke;
 }
+
 .main {
     width: 550px;
     height: 90px;
@@ -97,7 +98,10 @@ body {
     visibility: visible;
 }
 
-
+.fade {
+    background-color: white;
+    color: black;
+}
 
 @media(max-width:425px) {
 
@@ -105,6 +109,7 @@ body {
         margin: 4em auto;
         width: 100%;
     }
+
     .main {
         width: 100%;
         margin-bottom: 1em;
@@ -136,6 +141,7 @@ body {
         margin: 0 auto;
         font-size: 0.5rem;
     }
+
     .tooltip .tooltiptext {
         font-size: 0.5rem;
         width: 50px;
